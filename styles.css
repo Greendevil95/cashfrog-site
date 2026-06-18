@@ -321,29 +321,16 @@ h3 {
 }
 
 @media (max-width: 920px) {
-  .site-header {
-    width: min(100% - 28px, 720px);
-  }
-
-  .nav {
-    gap: 12px;
-    font-size: 13px;
-  }
-
   .hero {
     grid-template-columns: 1fr;
     width: min(100% - 28px, 720px);
     min-height: auto;
-    padding: 34px 0 56px;
-  }
-
-  .hero-copy {
-    max-width: 680px;
+    padding: 12px 0 56px;
   }
 
   .hero-art {
     min-height: auto;
-    margin-top: 20px;
+    margin-bottom: 32px;
     overflow: hidden;
     border-radius: 28px;
   }
@@ -355,6 +342,10 @@ h3 {
     max-width: 100%;
     height: auto;
     transform: none;
+  }
+
+  .hero-copy {
+    max-width: 680px;
   }
 
   .feature-grid,
