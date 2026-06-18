@@ -383,6 +383,23 @@ h3 {
     border-radius: 24px;
     padding: 24px;
   }
+
+  .legal-page {
+    width: min(100% - 28px, 720px);
+    margin: 24px auto 60px;
+  }
+
+  .legal-card h1 {
+    font-size: 30px;
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
+  .legal-card h2 {
+    font-size: 21px;
+    line-height: 1.12;
+  }
 }
 
 @media (min-width: 921px) {
@@ -423,4 +440,10 @@ h3 {
   .actions {
     justify-content: center;
   }
+}
+
+.legal-card h1 {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
 }
