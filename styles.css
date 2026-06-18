@@ -408,7 +408,6 @@ h3 {
   }
 
   .hero-art {
-    order: 1;
     width: 100%;
     min-height: 0;
     overflow: hidden;
@@ -426,7 +425,6 @@ h3 {
   }
 
   .hero-copy {
-    order: 2;
     max-width: 760px;
     text-align: center;
   }
