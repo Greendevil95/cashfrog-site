@@ -40,10 +40,12 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  width: min(1180px, calc(100% - 40px));
-  margin: 0 auto;
-  padding: 18px 0;
-  backdrop-filter: blur(18px);
+
+  width: 100%;
+  padding: 18px max(20px, calc((100% - 1180px) / 2));
+
+  background: var(--bg);
+  box-shadow: 0 1px 0 var(--line);
 }
 
 .brand {
@@ -390,10 +392,11 @@ h3 {
   }
 
   .legal-card h1 {
-    font-size: 30px;
-    line-height: 1.05;
-    overflow-wrap: anywhere;
-    hyphens: auto;
+    font-size: 26px;
+    line-height: 1.08;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
   }
 
   .legal-card h2 {
