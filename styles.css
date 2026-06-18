@@ -342,16 +342,19 @@ h3 {
   }
 
   .hero-art {
-    min-height: 360px;
+    min-height: auto;
     margin-top: 20px;
     overflow: hidden;
     border-radius: 28px;
   }
 
   .hero-art img {
-    right: 50%;
-    width: 760px;
-    transform: translate(50%, -50%);
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: none;
   }
 
   .feature-grid,
@@ -382,19 +385,53 @@ h3 {
     width: 100%;
   }
 
-  .hero-art {
-    min-height: 300px;
-  }
-
-  .hero-art img {
-    width: 620px;
-  }
-
   .feature,
   .privacy-band,
   .release,
   .legal-card {
     border-radius: 24px;
     padding: 24px;
+  }
+}
+
+@media (min-width: 921px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+
+    width: min(1180px, calc(100% - 40px));
+    min-height: auto;
+    margin: 0 auto;
+    padding: 42px 0 76px;
+  }
+
+  .hero-art {
+    order: 1;
+    width: 100%;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 32px;
+  }
+
+  .hero-art img {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: none;
+    filter: drop-shadow(var(--shadow));
+  }
+
+  .hero-copy {
+    order: 2;
+    max-width: 760px;
+    text-align: center;
+  }
+
+  .actions {
+    justify-content: center;
   }
 }
